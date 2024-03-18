@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>4Geeks Academy</title>
+		<style>
+			/* your code here */
+			body {
+				display: flex;
+				margin: auto;
+			}
 
-    <style>
-        /* your code here */
-        
-    </style>
-</head>
+			table,
+			th,
+			td {
+				border: 2px solid grey;
+				width: 500px;
+				align-items: center;
+			}
 
-<body>
-    <form>
-        <!-- your code here -->
-        
-    </form>
-</body>
+			th {
+				background-color: rgba(124, 205, 255, 0.712);
+				text-align: center;
+			}
 
+			input[type="submit"] {
+				text-align: center;
+				margin: auto;
+			}
+
+			input[type="text"] {
+				width: 500px;
+			}
+
+			textarea {
+				resize: none;
+				margin: auto;
+				width: 550px;
+			}
+
+			.last {
+				margin-left: 50%;
+				margin-right: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td><label>Name</label></td>
+					<td><input type="text" /></td>
+				</tr>
+				<tr>
+					<td><label for="">Sexe</label></td>
+					<td>
+						<input type="radio" value="Male" name="sexe" /><label for="sexe">Male</label><br />
+						<input type="radio" value="Female" name="sexe" /><label for="sexe">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="">Eye color</label></td>
+					<td>
+						<select name="color">
+							<option value="green">Green</option>
+							<option value="red">Red</option>
+							<option value="yellow">Yellow</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" value="over 6 feet" /><label for="">Over 6 feet tall</label><br />
+						<input type="checkbox" name="" id="" value="Over 200 pounds" /><label for="">Over 200 pounds</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="">Describe your athletic ability:</label><br />
+						<textarea name="" id="" cols="2" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr class="last">
+					<td colspan="2"><input type="submit" value="Enter my information" /></td>
+				</tr>
+			</table>
+
+			<!-- your code here -->
+		</form>
+	</body>
 </html>
